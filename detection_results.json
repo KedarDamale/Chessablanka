@@ -1,0 +1,116 @@
+{
+  "predictions": [
+    {
+      "x": 664,
+      "y": 516,
+      "width": 68,
+      "height": 61,
+      "confidence": 0.8735045790672302,
+      "class": "white-king",
+      "class_id": 14,
+      "detection_id": "9b5bdde0-9dd4-416a-b2d9-2b843eb90e3f",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 597,
+      "y": 329,
+      "width": 54,
+      "height": 47,
+      "confidence": 0.862912654876709,
+      "class": "white-rook",
+      "class_id": 18,
+      "detection_id": "07bbe1d3-0ec0-476d-ac8d-65695433dc52",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 475,
+      "y": 133,
+      "width": 64,
+      "height": 64,
+      "confidence": 0.8560492992401123,
+      "class": "black-king",
+      "class_id": 7,
+      "detection_id": "128fff52-630e-42b8-aa7a-91cf9ff13a23",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 594,
+      "y": 267,
+      "width": 48,
+      "height": 39,
+      "confidence": 0.8469856381416321,
+      "class": "black-pawn",
+      "class_id": 9,
+      "detection_id": "d0f548ed-a03c-4f0a-a39c-117dcc6729bb",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 337,
+      "y": 455,
+      "width": 73,
+      "height": 51,
+      "confidence": 0.8412938714027405,
+      "class": "black-rook",
+      "class_id": 11,
+      "detection_id": "b381e328-cfe8-4a50-a982-093ea5ad898c",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 658,
+      "y": 390,
+      "width": 46,
+      "height": 40,
+      "confidence": 0.8373922109603882,
+      "class": "white-pawn",
+      "class_id": 16,
+      "detection_id": "a7b53f12-30b2-409c-83a5-5558b4f18269",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 660,
+      "y": 336,
+      "width": 50,
+      "height": 40,
+      "confidence": 0.83155757188797,
+      "class": "black-pawn",
+      "class_id": 9,
+      "detection_id": "5f32da40-5865-4165-8fdb-623cb6a28528",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 536,
+      "y": 200,
+      "width": 46,
+      "height": 41,
+      "confidence": 0.6545485258102417,
+      "class": "black-bishop",
+      "class_id": 6,
+      "detection_id": "51e62d27-3c56-4b5d-8cf1-3495bdbdc5ce",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    },
+    {
+      "x": 287,
+      "y": 80,
+      "width": 70,
+      "height": 63,
+      "confidence": 0.4884277880191803,
+      "class": "white-bishop",
+      "class_id": 13,
+      "detection_id": "6daa2821-bc46-4484-99d0-3f837790b7b0",
+      "image_path": "images\\1.jpg",
+      "prediction_type": "ObjectDetectionModel"
+    }
+  ],
+  "image": {
+    "width": "1152",
+    "height": "648"
+  }
+}

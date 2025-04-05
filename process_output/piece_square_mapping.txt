@@ -1,0 +1,9 @@
+A8: white-bishop
+B2: black-rook
+D7: black-king
+F4: white-bishop
+G3: white-pawn
+F5: black-pawn
+E6: black-pawn
+G4: black-pawn
+G1: white-king
