@@ -100,10 +100,29 @@ def main():
         print("\n" + "="*50)
         print("📍 DETECTED PIECES AND THEIR POSITIONS")
         print("="*50)
+
+        # Separate pieces by color
+        white_pieces = []
+        black_pieces = []
         for square, piece in sorted(piece_to_square_mapping.items()):
-            color = "⚪" if piece.startswith("white") else "⚫"
             piece_name = piece.split('-')[1].capitalize()
-            print(f"{color} {piece_name:6} at {square}")
+            if piece.startswith("white"):
+                white_pieces.append(f"{piece_name:6} at {square}")
+            else:
+                black_pieces.append(f"{piece_name:6} at {square}")
+
+        # Find the maximum length of the two lists
+        max_len = max(len(white_pieces), len(black_pieces))
+
+        # Print header
+        print("\n{:<20} {:<20}".format("White Pieces ⚪", "Black Pieces ⚫"))
+        print("="*40)
+
+        # Print pieces side by side
+        for i in range(max_len):
+            white = white_pieces[i] if i < len(white_pieces) else " "*15
+            black = black_pieces[i] if i < len(black_pieces) else " "*15
+            print(f"{white:<20} {black:<20}")
         
         # Render the chessboard in CLI with better formatting
         print("\n" + "="*50)
@@ -142,7 +161,7 @@ def main():
             print("🤖 CHESSABLANKA ANALYSIS")
             print("="*50)
             print("Analyzing position...")
-            analysis = analyze_position(fen, stockfish_path=stockfish_path, depth=15)
+            analysis = analyze_position(fen, stockfish_path=stockfish_path, depth=22)
 
             # Print analysis results with better formatting
             if analysis['evaluation'] != "0.00":
