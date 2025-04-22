@@ -1,176 +1,231 @@
 {
   "detected_pieces": [
     {
-      "label": "white-bishop",
-      "piece_type": "white-bishop",
-      "color": "unknown",
-      "confidence": 0.8842401504516602,
-      "center": [
-        61,
-        65
-      ],
-      "box": [
-        12,
-        17,
-        109,
-        112
-      ],
-      "width": 97,
-      "height": 95
-    },
-    {
       "label": "black-bishop",
       "piece_type": "black-bishop",
       "color": "unknown",
-      "confidence": 0.8707144260406494,
+      "confidence": 0.894910454750061,
       "center": [
-        452,
+        138,
         246
       ],
       "box": [
-        413,
-        205,
-        490,
-        286
+        87,
+        199,
+        189,
+        292
       ],
-      "width": 77,
+      "width": 102,
+      "height": 93
+    },
+    {
+      "label": "white-bishop",
+      "piece_type": "white-bishop",
+      "color": "unknown",
+      "confidence": 0.884143590927124,
+      "center": [
+        447,
+        450
+      ],
+      "box": [
+        407,
+        412,
+        487,
+        488
+      ],
+      "width": 80,
+      "height": 76
+    },
+    {
+      "label": "white-knight",
+      "piece_type": "white-knight",
+      "color": "unknown",
+      "confidence": 0.8823174834251404,
+      "center": [
+        545,
+        546
+      ],
+      "box": [
+        503,
+        505,
+        586,
+        586
+      ],
+      "width": 83,
       "height": 81
     },
     {
       "label": "black-pawn",
       "piece_type": "black-pawn",
       "color": "unknown",
-      "confidence": 0.866635262966156,
+      "confidence": 0.8687206506729126,
       "center": [
-        647,
-        446
+        246,
+        345
       ],
       "box": [
-        611,
-        410,
-        683,
-        481
+        207,
+        309,
+        284,
+        381
       ],
-      "width": 72,
-      "height": 71
+      "width": 77,
+      "height": 72
     },
     {
-      "label": "black-pawn",
-      "piece_type": "black-pawn",
+      "label": "black-knight",
+      "piece_type": "black-knight",
       "color": "unknown",
-      "confidence": 0.8648754954338074,
+      "confidence": 0.8667705655097961,
       "center": [
-        535,
-        356
+        338,
+        353
       ],
       "box": [
-        501,
-        322,
-        569,
-        389
+        295,
+        312,
+        381,
+        393
       ],
-      "width": 68,
-      "height": 67
-    },
-    {
-      "label": "black-rook",
-      "piece_type": "black-rook",
-      "color": "unknown",
-      "confidence": 0.8629790544509888,
-      "center": [
-        149,
-        645
-      ],
-      "box": [
-        100,
-        599,
-        198,
-        690
-      ],
-      "width": 98,
-      "height": 91
-    },
-    {
-      "label": "white-bishop",
-      "piece_type": "white-bishop",
-      "color": "unknown",
-      "confidence": 0.8554730415344238,
-      "center": [
-        542,
-        648
-      ],
-      "box": [
-        502,
-        604,
-        582,
-        691
-      ],
-      "width": 80,
-      "height": 87
-    },
-    {
-      "label": "white-pawn",
-      "piece_type": "white-pawn",
-      "color": "unknown",
-      "confidence": 0.841639518737793,
-      "center": [
-        645,
-        541
-      ],
-      "box": [
-        609,
-        506,
-        680,
-        576
-      ],
-      "width": 71,
-      "height": 70
+      "width": 86,
+      "height": 81
     },
     {
       "label": "white-king",
       "piece_type": "white-king",
       "color": "unknown",
-      "confidence": 0.8324066400527954,
+      "confidence": 0.8658049702644348,
       "center": [
-        651,
-        746
+        650,
+        349
       ],
       "box": [
-        597,
-        693,
-        704,
-        798
+        600,
+        303,
+        700,
+        394
       ],
-      "width": 107,
-      "height": 105
+      "width": 100,
+      "height": 91
+    },
+    {
+      "label": "white-pawn",
+      "piece_type": "white-pawn",
+      "color": "unknown",
+      "confidence": 0.8535197973251343,
+      "center": [
+        451,
+        647
+      ],
+      "box": [
+        415,
+        609,
+        486,
+        684
+      ],
+      "width": 71,
+      "height": 75
+    },
+    {
+      "label": "black-pawn",
+      "piece_type": "black-pawn",
+      "color": "unknown",
+      "confidence": 0.850191056728363,
+      "center": [
+        143,
+        455
+      ],
+      "box": [
+        100,
+        418,
+        185,
+        491
+      ],
+      "width": 85,
+      "height": 73
+    },
+    {
+      "label": "white-pawn",
+      "piece_type": "white-pawn",
+      "color": "unknown",
+      "confidence": 0.8469420075416565,
+      "center": [
+        348,
+        552
+      ],
+      "box": [
+        310,
+        517,
+        385,
+        587
+      ],
+      "width": 75,
+      "height": 70
+    },
+    {
+      "label": "black-pawn",
+      "piece_type": "black-pawn",
+      "color": "unknown",
+      "confidence": 0.8377335667610168,
+      "center": [
+        352,
+        457
+      ],
+      "box": [
+        316,
+        422,
+        388,
+        492
+      ],
+      "width": 72,
+      "height": 70
     },
     {
       "label": "black-king",
       "piece_type": "black-king",
       "color": "unknown",
-      "confidence": 0.7872228026390076,
+      "confidence": 0.8375270962715149,
       "center": [
-        446,
-        351
+        241,
+        245
       ],
       "box": [
-        403,
-        305,
-        489,
-        396
+        180,
+        191,
+        301,
+        299
       ],
-      "width": 86,
-      "height": 91
+      "width": 121,
+      "height": 108
+    },
+    {
+      "label": "white-pawn",
+      "piece_type": "white-pawn",
+      "color": "unknown",
+      "confidence": 0.8343057632446289,
+      "center": [
+        544,
+        355
+      ],
+      "box": [
+        510,
+        321,
+        578,
+        388
+      ],
+      "width": 68,
+      "height": 67
     }
   ],
-  "piece_count": 9,
+  "piece_count": 12,
   "piece_distribution": {
-    "white-bishop": 2,
     "black-bishop": 1,
-    "black-pawn": 2,
-    "black-rook": 1,
-    "white-pawn": 1,
+    "white-bishop": 1,
+    "white-knight": 1,
+    "black-pawn": 3,
+    "black-knight": 1,
     "white-king": 1,
+    "white-pawn": 3,
     "black-king": 1
   },
   "output_files": {

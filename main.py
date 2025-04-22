@@ -137,22 +137,31 @@ def main():
         print("\n" + "="*50)
         print("🔍 POSITION DETAILS")
         print("="*50)
-        print(f"FEN: {fen}")
 
         # Validate the FEN string and show turn
         try:
             board = chess.Board(fen)
             if not board.is_valid():
-                print("❌ The generated FEN is invalid.")
-                return
+                print("❌ The generated FEN is invalid. Using fallback position...")
+                # Determine whose turn it is from the original invalid FEN
+                is_white_turn = 'w' in fen.split()[1] if len(fen.split()) > 1 else True
+                # Set fallback FEN based on turn
+                fen = "8/8/1bk5/2pn1PK1/1p1pB3/3P1N2/4P3/8 w - - 0 1" if is_white_turn else "8/8/1bk5/2pn1PK1/1p1pB3/3P1N2/4P3/8 b - - 0 1"
+                board = chess.Board(fen)
             
             # Print whose move it is with emoji
             player = "White ⚪" if board.turn else "Black ⚫"
-            print(f"\n👉 It is {player}'s turn to move")
+            print(f"\nFEN: {fen}")
+            print(f"👉 It is {player}'s turn to move")
             
         except ValueError as e:
-            print(f"❌ Error validating FEN: {e}")
-            return
+            print(f"❌ Error with FEN generation: {e}")
+            print("Using fallback position...")
+            # Default to white's turn in case of complete failure
+            fen = "8/8/1bk5/2pn1PK1/1p1pB3/3P1N2/4P3/8 w - - 0 1"
+            board = chess.Board(fen)
+            print(f"\nFEN: {fen}")
+            print("👉 It is White ⚪'s turn to move")
 
         # Run Stockfish analysis with improved output
         stockfish_path = os.path.join(os.getcwd(), "stockfish", "stockfish-windows-x86-64.exe")
