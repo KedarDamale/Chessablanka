@@ -38,14 +38,14 @@ AI-powered detection identifies each piece on the board.
 ### 5. Position Analysis
 Displays detected pieces and their positions in a clear matrix format.
 
-![Position Matrix](README_Images\CLI_output_detected_pieces.png)
+![Position Matrix](README_Images/CLI_output_detected_pieces.png)
 
 ![Position Matrix](README_Images/Chess_matrix_display.png)
 
 ### 6. Move Analysis
 Based on whose turn it is, Chessablanka provides detailed position evaluation and best moves.
 
-![Position Matrix](README_Images\eval.png)
+![Position Matrix](README_Images/eval.png)
 
 
 Each step is automated and provides visual feedback to ensure accurate chess position analysis.
@@ -85,4 +85,5 @@ python main.py --image images/my_chess_position.jpg
 ## License
 
 This project is licensed under MIT License - see the LICENSE file for details.
+
 
