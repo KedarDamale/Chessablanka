@@ -1,89 +1,68 @@
 # Chessablanka
 
-A computer vision-based chess position analyzer that can detect chess pieces from images and provide analysis.
+Chessablanka is a computer-vision chess position analyzer. It takes a chessboard image, reconstructs the board position, and evaluates the resulting game state with Stockfish.
 
-## Features
+## Highlights
 
-- Upload any chess position image
-- Automatic chessboard detection and perspective correction
-- AI-powered chess piece recognition 
-- Piece position detection with square coordinates (e.g. e4, f6)
-- Chessablanka analysis showing:
-  - Position evaluation
-  - Best moves sequence
-  - Best chess moves sequence line
+- Load a chess-position image for analysis.
+- Select the board corners and correct the image perspective.
+- Generate an 8×8 grid over the corrected board.
+- Detect chess pieces using a vision model.
+- Map detected pieces to algebraic squares such as `e4` and `f6`.
+- Generate a board position from the detected square map.
+- Evaluate the position, best move, and principal variation with Stockfish.
+- Save intermediate visual outputs for inspection.
 
-## Showcase
+## Analysis pipeline
 
-### 1. Main Window
-When you start the program, the main window appears where you can load your chess position image.
-
-![Main Window](README_Images/Main_window.png)
-
-### 2. Manual Chessboard Selection
-Select the four corners of the chessboard for accurate perspective correction.
-
-![Chessboard Selection](README_Images/User_input_chessboard_countours.png)
-
-### 3. Chess Grid Overlay
-The program generates a perfect grid overlay on the corrected chessboard image.
-
-![Chess Grid](README_Images/Process_output/mapped_grid_board.jpg)
-
-### 4. Chess Piece Detection
-AI-powered detection identifies each piece on the board.
-
-![Piece Detection](README_Images/Process_output/cropped_board_detected.jpg)
-
-### 5. Position Analysis
-Displays detected pieces and their positions in a clear matrix format.
-
-![Position Matrix](README_Images/CLI_output_detected_pieces.png)
-
-![Position Matrix](README_Images/Chess_matrix_display.png)
-
-### 6. Move Analysis
-Based on whose turn it is, Chessablanka provides detailed position evaluation and best moves.
-
-![Position Matrix](README_Images/eval.png)
-
-
-Each step is automated and provides visual feedback to ensure accurate chess position analysis.
-
-## Usage
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/Chessablanka.git
-cd Chessablanka
+```mermaid
+flowchart LR
+  IMAGE[Chessboard image] --> CORNERS[Board-corner selection]
+  CORNERS --> WARP[Perspective correction]
+  WARP --> GRID[8×8 grid mapping]
+  GRID --> DETECT[Chess-piece detection]
+  DETECT --> MAP[Piece-to-square mapping]
+  MAP --> FEN[Position generation]
+  FEN --> ENGINE[Stockfish analysis]
+  ENGINE --> RESULT[Evaluation and best line]
 ```
 
-2. Install required packages:
-```bash
-pip install opencv-python numpy chess argparse
-```
+## Built with
 
-### Running the Program
+- Python
+- OpenCV
+- NumPy
+- python-chess
+- Roboflow vision model
+- Stockfish
+- Jupyter Notebook
 
-Basic usage with default image:
-```bash
-python main.py
-```
+## Screenshots
 
-Specify custom image:
-```bash 
-python main.py --image path/to/chess/image.jpg
-```
+### Board selection
 
-Example:
-```bash
-python main.py --image images/my_chess_position.jpg
-```
+![Chessboard selection](README_Images/User_input_chessboard_countours.png)
+
+### Corrected board grid
+
+![Chessboard grid](README_Images/Process_output/mapped_grid_board.jpg)
+
+### Piece detection
+
+![Detected pieces](README_Images/Process_output/cropped_board_detected.jpg)
+
+### Position evaluation
+
+![Position evaluation](README_Images/eval.png)
+
+## Project status
+
+Chessablanka is a local analysis tool. A public deployment URL has not been configured for this repository.
 
 ## License
 
-This project is licensed under MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE).
 
+## Contact
 
+Created by [Kedar Pravin Damale](https://github.com/KedarDamale).
